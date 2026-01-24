@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Beatles</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+
+    <style type="text/tailwindcss">
+        @theme {
+      --font-sans: 'Bai Jamjuree', sans-serif;
+      --color-bg: #F9FAFB;        
+      --color-card: #FFFFFF;
+      --color-text: #1F2937;      
+      --color-muted: #6B7280;    
+      --color-border: #E5E7EB;    
+      --color-accent: #111827;    
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-[--color-bg] text-[--color-text]">
+
+    <!-- NAV -->
+    <header class="sticky top-0 bg-[--color-bg] backdrop-blur border-b border-[--color-border] z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#hero" class="font-bold tracking-wide">The Beatles</a>
+            <div class="hidden md:flex items-center gap-6 text-sm text-[--color-muted]">
+                <a href="#about" class="hover:text-[--color-text]">Historia</a>
+                <a href="#members" class="hover:text-[--color-text]">Integrantes</a>
+                <a href="#music" class="hover:text-[--color-text]">Discografía</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1) HERO -->
+
+    <section id="hero" class="px-6 pt-14 pb-16">
+        <div class="max-w-6xl mx-auto grid gap-10 items-center md:grid-cols-2">
+            <div class="text-center md:text-left">
+                <h1 class="mt-3 text-4xl md:text-5xl font-bold leading-tight">
+                    Aprendiendo del legado de
+                    <span class="underline decoration-[--color-accent] decoration-4 underline-offset-4">The
+                        Beatles</span>
+                </h1>
+                <p class="mt-5 text-lg text-[--color-muted] max-w-xl mx-auto md:mx-0">
+                    Conoce de cada integrante, los diferentes estilos, sus mejores canciones destacadas y el impacto de
+                    la banda mas importante de la historia.
+                </p>
+
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#about"
+                        class="px-6 py-3 rounded-lg border border-[--color-border] bg-[--color-accent] text-[--color-text] font-semibold hover:opacity-90 transition">
+                        Historia
+                    </a>
+                    <a href="#members"
+                        class="px-6 py-3 rounded-lg border border-[--color-border] bg-[--color-accent] text-[--color-text] font-semibold hover:opacity-90 transition">
+                        Integrantes
+                    </a>
+                    <a href="#music"
+                        class="px-6 py-3 rounded-lg border border-[--color-border] bg-white font-semibold hover:opacity-90 transition">
+                        Discografía
+                    </a>
+                </div>
+            </div>
+            <!-- Imagen / Arte -->
+            <div class="hidden md:flex justify-center md:justify-end">
+                <img src="img/beatles_hero.jpg" alt="The Beatles" class="w-full max-w-md rounded-2xl shadow-xl object-cover
+                    md:max-w-lg lg:max-w-xl" />
+            </div>
+        </div>
+    </section>
+
+    <!-- 2) ABOUT / HISTORIA -->
+    <section id="about" class="px-6 py-16 bg-white border-y border-[--color-border]">
+        <div class="max-w-6xl mx-auto grid gap-10 flex md:flex-row-2 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold">Historia breve</h2>
+                <p class="mt-4 text-[--color-muted] leading-relaxed">
+                    The Beatles transformaron la música popular con innovación, composición y producción. Marcando un
+                    antes y despues de como funciona la industria de la musica.
+                </p>
+            </div>
+
+
+            <!-- ETAPA 1 -->
+            <article class="rounded-xl p-4 border border-[--color-border] sm:p-6 lg:p-8">
+                <div class="flex items-start sm:gap-8">
+                    <div>
+                        <strong
+                            class="rounded-sm border border-[--color-border] bg-[--color-card] px-3 py-1.5 text-[10px] font-medium text-[--color-accent]">
+                            Etapa 1
+                        </strong>
+
+                        <h3 class="mt-4 text-lg font-medium sm:text-xl">
+                            <a href="#" class="hover:underline">Inicios y Hamburgo (1960–1962)</a>
+                        </h3>
+
+                        <p class="mt-1 text-sm text-gray-700">
+                            Antes de la fama, la banda se formó en Liverpool e iniciaron tocando largas sesiones en
+                            Hamburgo.
+                            En esta etapa consolidraon su disciplina, su sonido solido y la química entre sus
+                            integrantes.
+                        </p>
+
+                        <div class="mt-4 sm:flex sm:items-center sm:gap-2">
+                            <p class="text-xs font-medium">Dato:</p>
+                            <span class="hidden sm:block" aria-hidden="true">·</span>
+                            <p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+                                <a href="#" class="underline hover:text-gray-700">Clubes y residencias</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ETAPA 2 -->
+            <article class="rounded-xl p-4 border border-[--color-border] sm:p-6 lg:p-8">
+                <div class="flex items-start sm:gap-8">
+                    <div>
+                        <strong
+                            class="rounded-sm border border-[--color-border] bg-[--color-card] px-3 py-1.5 text-[10px] font-medium text-[--color-accent]">
+                            Etapa 2
+                        </strong>
+
+                        <h3 class="mt-4 text-lg font-medium sm:text-xl">
+                            <a href="#" class="hover:underline">Beatlemanía y explosión global (1963–1965)</a>
+                        </h3>
+
+                        <p class="mt-1 text-sm text-gray-700">
+                            Con sencillos que se popularizaban rapidamente, giras intensas y una presencia mediática
+                            nunca antes vista, The Beatles se
+                            convirtieron en un fenómeno mundial. Esta etapa consolidó su identidad pop y su impacto en
+                            toda la cultura.
+                        </p>
+
+                        <div class="mt-4 sm:flex sm:items-center sm:gap-2">
+                            <p class="text-xs font-medium">Dato:</p>
+                            <span class="hidden sm:block" aria-hidden="true">·</span>
+                            <p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+                                <a href="#" class="underline hover:text-gray-700">Giras y récords</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ETAPA 3 -->
+            <article class="rounded-xl p-4 border border-[--color-border] sm:p-6 lg:p-8">
+                <div class="flex items-start sm:gap-8">
+                    <div>
+                        <strong
+                            class="rounded-sm border border-[--color-border] bg-[--color-card] px-3 py-1.5 text-[10px] font-medium text-[--color-accent]">
+                            Etapa 3
+                        </strong>
+
+                        <h3 class="mt-4 text-lg font-medium sm:text-xl">
+                            <a href="#" class="hover:underline">Reinvención e innovación en estudio (1966–1967)</a>
+                        </h3>
+
+                        <p class="mt-1 text-sm text-gray-700">
+                            La banda reduce giras y se enfoca en el estudio como instrumento creativo para inventar
+                            algunas de sus mejores canciones.
+                            Se experimenta con arreglos, grabación y conceptos, elevando el estándar de producción
+                            musical para siempre.
+                        </p>
+
+                        <div class="mt-4 sm:flex sm:items-center sm:gap-2">
+                            <p class="text-xs font-medium">Dato:</p>
+                            <span class="hidden sm:block" aria-hidden="true">·</span>
+                            <p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+                                <a href="#" class="underline hover:text-gray-700">El estudio como “laboratorio”</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ETAPA 4 -->
+            <article class="rounded-xl p-4 border border-[--color-border] sm:p-6 lg:p-8">
+                <div class="flex items-start sm:gap-8">
+                    <div>
+                        <strong
+                            class="rounded-sm border border-[--color-border] bg-[--color-card] px-3 py-1.5 text-[10px] font-medium text-[--color-accent]">
+                            Etapa 4
+                        </strong>
+
+                        <h3 class="mt-4 text-lg font-medium sm:text-xl">
+                            <a href="#" class="hover:underline">Madurez, tensión y cierre (1968–1970)</a>
+                        </h3>
+
+                        <p class="mt-1 text-sm text-gray-700">
+                            En sus últimos años, el grupo produce obras muy variadas y maduras.
+                            Aunque aumentan tensiones internas, el resultado final es un catálogo que marcó
+                            y seguira marcando a muchas generaciones.
+
+                        </p>
+
+                        <div class="mt-4 sm:flex sm:items-center sm:gap-2">
+                            <p class="text-xs font-medium">Dato:</p>
+                            <span class="hidden sm:block" aria-hidden="true">·</span>
+                            <p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+                                <a href="#" class="underline hover:text-gray-700">Últimos álbumes</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- 3) MEMBERS  -->
+    <section id="members" class="px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold">Integrantes</h2>
+                <p class="mt-3 text-[--color-muted] max-w-2xl mx-auto md:mx-0">
+                    Aprende en el sitio de cada integrante, sobre biografía, canciones destacadas y legado.
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- John -->
+                <a href="john.html"
+                    class="group p-6 rounded-2xl bg-white border border-[--color-border] hover:shadow-lg transition">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold">John Lennon</h3>
+                        <span class="text-sm text-[--color-muted] group-hover:text-[--color-text]">Ver</span>
+                    </div>
+                    <p class="mt-2 text-sm text-[--color-muted]">Voz y Guitarra</p>
+                    <div class="mt-4 h-60 rounded-xl overflow-hidden">
+                        <img src="img/john.jpg" alt="John Lennon"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    </div>
+                </a>
+
+                <!-- Paul -->
+                <a href="paul.html"
+                    class="group p-6 rounded-2xl bg-white border border-[--color-border] hover:shadow-lg transition">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold">Paul McCartney</h3>
+                        <span class="text-sm text-[--color-muted] group-hover:text-[--color-text]">Ver</span>
+                    </div>
+                    <p class="mt-2 text-sm text-[--color-muted]">Bajo y Voz</p>
+                    <div class="mt-4 h-60 rounded-xl overflow-hidden">
+                        <img src="img/paul.jpg" alt="Paul McCartney"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    </div>
+                </a>
+
+                <!-- George -->
+                <a href="george.html"
+                    class="group p-6 rounded-2xl bg-white border border-[--color-border] hover:shadow-lg transition">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold">George Harrison</h3>
+                        <span class="text-sm text-[--color-muted] group-hover:text-[--color-text]">Ver</span>
+                    </div>
+                    <p class="mt-2 text-sm text-[--color-muted]">Guitarra líder</p>
+                    <div class="mt-4 h-60 rounded-xl overflow-hidden">
+                        <img src="img/george.jpg" alt="George Harrison"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    </div>
+                </a>
+
+                <!-- Ringo -->
+                <a href="ringo.html"
+                    class="group p-6 rounded-2xl bg-white border border-[--color-border] hover:shadow-lg transition">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold">Ringo Starr</h3>
+                        <span class="text-sm text-[--color-muted] group-hover:text-[--color-text]">Ver</span>
+                    </div>
+                    <p class="mt-2 text-sm text-[--color-muted]">Batería</p>
+                    <div class="mt-4 h-60 rounded-xl overflow-hidden">
+                        <img src="img/ringo.jpg" alt="Ringo Starr"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 4) MUSIC  -->
+    <section id="music" class="px-6 py-16 bg-white border-y border-[--color-border]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold">Discografía</h2>
+                <p class="mt-3 text-[--color-muted] max-w-2xl mx-auto md:mx-0">
+                    Los álbumes que representan las distintas etapas y estilos del grupo
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 grid-cols-1 lg:grid-cols-2">
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1963</p>
+                    <h3 class="mt-1 font-bold text-lg">Please Please Me</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        Love Me Do, Twist and Shout, I Saw Her Standing There
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/3KzAvEXcqJKBF97HrXwlgf?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1963</p>
+                    <h3 class="mt-1 font-bold text-lg">With The Beatles</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        All My Loving, Please Mister Postman, Roll Over Bhetoven
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/1aYdiJk6XKeHWGO3FzHHTr?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1964</p>
+                    <h3 class="mt-1 font-bold text-lg">A Hard Day’s Night</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        If I Fell, And I Love Her, A Hard Days Night
+                    </p>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/6wCttLq0ADzkPgtRnUihLV?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1964</p>
+                    <h3 class="mt-1 font-bold text-lg">Beatles for Sale</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        No Reply, Ill Follow The Sun, Eight Days a Week
+                    </p>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/1vANZV20H5B4Fk6yf7Ot9a?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1965</p>
+                    <h3 class="mt-1 font-bold text-lg">Help!</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        Yesterday, Ticket To Ride, Help!, Another Girl
+                    </p>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/0PT5m6hwPRrpBwIHVnvbFX?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1965</p>
+                    <h3 class="mt-1 font-bold text-lg">Rubber Soul</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        In My Life, Nowhere Man, Michelle, Girl
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/50o7kf2wLwVmOTVYJOTplm?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1966</p>
+                    <h3 class="mt-1 font-bold text-lg">Revolver</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        Eleanor Rigby, For No One y Here, There And Everywhere
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/3PRoXYsngSwjEQWR5PsHWR?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1967</p>
+                    <h3 class="mt-1 font-bold text-lg">Sgt. Pepper’s Lonely Hearts Club Band</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        A Day In The Life, With a Little Help From My Friends, Lucy In The Sky With Diamonds
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/1ntNLgaYCFCkeW4flGYlY2?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                      <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1967</p>
+                    <h3 class="mt-1 font-bold text-lg">Magical Mistery Tour</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        All You Need is Love, Penny Lane, Strawberry Fields Forever
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/1ntNLgaYCFCkeW4flGYlY2?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1968</p>
+                    <h3 class="mt-1 font-bold text-lg">The Beatles (White Album)</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        Blackbird, Helter Skelter, I Will, Julia, Ob-La-Di, Ob-La-Da
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/1klALx0u4AavZNEvC4LrTL?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1969</p>
+                    <h3 class="mt-1 font-bold text-lg">Abbey Road</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        Something, Here Comes The Sun, Oh! Darling, The End
+                    </p>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/0ETFjACtuP2ADo6LFhL6HN?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-sm text-[--color-muted]">1970</p>
+                    <h3 class="mt-1 font-bold text-lg">Let It Be</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] text-center flex items-center justify-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[--color-text]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.73-2.885a.563.563 0 00-.586 0l-4.73 2.885a.562.562 0 01-.84-.61l1.285-5.385a.562.562 0 00-.182-.557L2.93 10.385c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                        Two Of Us, Let It Be, The Long And Winding Road
+                    </p>
+
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe
+                            src="https://open.spotify.com/embed/album/0jTGHV5xqHPvEcwL8f6YU5?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="px-6 py-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Explora a cada Beatle</h2>
+            <p class="mt-3 text-[--color-muted] max-w-2xl mx-auto">
+                Visita cada página individual para ver biografía, canciones recomendadas y legado.
+            </p>
+            <a href="#members"
+                class="inline-block mt-8 px-6 py-3 rounded-lg bg-[--color-accent] text-white font-semibold hover:opacity-90 transition">
+                Ir a integrantes
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="px-6 py-10 border-t border-[--color-border] bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-[--color-muted]">© 2026 — Sobre The Beatles - Desarrollo Web II</p>
+            <div class="flex gap-4 text-sm">
+                <a href="#hero" class="text-[--color-muted] hover:text-[--color-text]">Inicio</a>
+                <a href="#about" class="text-[--color-muted] hover:text-[--color-text]">Historia</a>
+                <a href="#members" class="text-[--color-muted] hover:text-[--color-text]">Integrantes</a>
+                <a href="#music" class="text-[--color-muted] hover:text-[--color-text]">Discografía</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

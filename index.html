@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guías Web II </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-sans bg-gray-950 text-[#D9CFE3] min-h-screen selection:bg-[#EF2908] selection:text-white">
+
+    <header class="border-b border-[#841613]/40 bg-gray-950/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+                <h1 class="text-2xl font-bold tracking-tight text-white">
+                    Guías de <span class="text-[#EF2908]">Desarrollo Web II</span>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-10">
+
+        <section class="mb-12">
+            <h2 class="text-lg font-bold text-white mb-4 border-l-4 border-[#EF2908] pl-3">Información</h2>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="p-4 rounded-xl bg-[#841613]/10 border border-[#841613]/30 hover:border-[#C98A90]/50 transition">
+                    <p class="text-xs text-[#C98A90] uppercase tracking-wider font-semibold">Nombre</p>
+                    <p class="mt-1 font-semibold text-white">Christopher Marroquín</p>
+                </div>
+
+                <div
+                    class="p-4 rounded-xl bg-[#841613]/10 border border-[#841613]/30 hover:border-[#C98A90]/50 transition">
+                    <p class="text-xs text-[#C98A90] uppercase tracking-wider font-semibold">Carrera</p>
+                    <p class="mt-1 font-semibold text-white">Ing. Software y Negocios Digitales</p>
+                </div>
+
+                <div
+                    class="p-4 rounded-xl bg-[#841613]/10 border border-[#841613]/30 hover:border-[#C98A90]/50 transition">
+                    <p class="text-xs text-[#C98A90] uppercase tracking-wider font-semibold">Carnet</p>
+                    <p class="mt-1 font-semibold text-white tracking-widest">20245332</p>
+                </div>
+
+                <div
+                    class="p-4 rounded-xl bg-[#841613]/10 border border-[#841613]/30 hover:border-[#C98A90]/50 transition">
+                    <p class="text-xs text-[#C98A90] uppercase tracking-wider font-semibold">Materia</p>
+                    <p class="mt-1 font-semibold text-white">Desarrollo Web II</p>
+                </div>
+
+                <div
+                    class="p-4 rounded-xl bg-[#EF2908]/10 border border-[#EF2908]/30 hover:border-[#EF2908] transition sm:col-span-2 lg:col-span-2">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-[#EF2908] uppercase tracking-wider font-bold">Guías Completadas</p>
+                            <p class="mt-1 font-bold text-2xl text-white">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-lg font-bold text-white border-l-4 border-[#EF2908] pl-3">Listado de Guías</h2>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <a href="Guia1_20245332/guia1_index.html" class="group relative block p-6 rounded-2xl bg-[#151515] border border-[#841613]/30 
+                    hover:border-emerald-500 hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <span class="inline-block px-2 py-0.5 rounded text-[12px] font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 mb-3">
+                                DISPONIBLE
+                            </span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+                                Guía 1
+                            </h3>
+                            <p class="mt-2 text-sm text-[#C98A90] line-clamp-2">
+                                Ejercicios guiados y ejercicio complementario.
+                            </p>
+                            <p class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                                Abrir
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="group relative block p-6 rounded-2xl bg-[#151515] border border-[#841613]/30 
+                    hover:border-[#EF2908] hover:-translate-y-1 transition-all duration-300 opacity-80">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <span class="inline-block px-2 py-0.5 rounded text-[12px] font-bold bg-[#EF2908]/10 text-[#EF2908] border border-[#EF2908]/20 mb-3">
+                                NO DISPONIBLE
+                            </span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-[#EF2908] transition-colors">
+                                Guía 2
+                            </h3>
+                            <p class="mt-2 text-sm text-[#C98A90] line-clamp-2">
+                                Próximamente.
+                            </p>
+                            <p class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-[#EF2908] transition-colors">
+                                Bloqueado
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="group relative block p-6 rounded-2xl bg-[#151515] border border-[#841613]/30 
+                    hover:border-[#EF2908] hover:-translate-y-1 transition-all duration-300 opacity-80">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <span class="inline-block px-2 py-0.5 rounded text-[12px] font-bold bg-[#EF2908]/10 text-[#EF2908] border border-[#EF2908]/20 mb-3">
+                                NO DISPONIBLE
+                            </span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-[#EF2908] transition-colors">
+                                Guía 3
+                            </h3>
+                            <p class="mt-2 text-sm text-[#C98A90] line-clamp-2">
+                                Próximamente.
+                            </p>
+                            <p class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-[#EF2908] transition-colors">
+                                Bloqueado
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="group relative block p-6 rounded-2xl bg-[#151515] border border-[#841613]/30 
+                    hover:border-[#EF2908] hover:-translate-y-1 transition-all duration-300 opacity-80">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <span class="inline-block px-2 py-0.5 rounded text-[12px] font-bold bg-[#EF2908]/10 text-[#EF2908] border border-[#EF2908]/20 mb-3">
+                                NO DISPONIBLE
+                            </span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-[#EF2908] transition-colors">
+                                Guía 4
+                            </h3>
+                            <p class="mt-2 text-sm text-[#C98A90] line-clamp-2">
+                                Próximamente.
+                            </p>
+                            <p class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-[#EF2908] transition-colors">
+                                Bloqueado
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group relative block p-6 rounded-2xl bg-[#151515] border border-[#841613]/30 
+                    hover:border-[#EF2908] hover:-translate-y-1 transition-all duration-300 opacity-80">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <span class="inline-block px-2 py-0.5 rounded text-[12px] font-bold bg-[#EF2908]/10 text-[#EF2908] border border-[#EF2908]/20 mb-3">
+                                NO DISPONIBLE
+                            </span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-[#EF2908] transition-colors">
+                                Guía 5
+                            </h3>
+                            <p class="mt-2 text-sm text-[#C98A90] line-clamp-2">
+                                Próximamente.
+                            </p>
+                            <p class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-[#EF2908] transition-colors">
+                                Bloqueado
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group relative block p-6 rounded-2xl bg-[#151515] border border-[#841613]/30 
+                    hover:border-[#EF2908] hover:-translate-y-1 transition-all duration-300 opacity-80">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <span class="inline-block px-2 py-0.5 rounded text-[12px] font-bold bg-[#EF2908]/10 text-[#EF2908] border border-[#EF2908]/20 mb-3">
+                                NO DISPONIBLE
+                            </span>
+                            <h3 class="text-xl font-bold text-white group-hover:text-[#EF2908] transition-colors">
+                                Guía 6
+                            </h3>
+                            <p class="mt-2 text-sm text-[#C98A90] line-clamp-2">
+                                Próximamente.
+                            </p>
+                            <p class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-[#EF2908] transition-colors">
+                                Bloqueado
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <footer class="mt-16 py-8 border-t border-[#841613]/30 text-center">
+            <p class="text-sm text-[#C98A90]">
+                2026 — Guías de Desarrollo Web II <span class="mx-2 text-[#841613]">|</span> Christopher Marroquín
+            </p>
+        </footer>
+
+    </main>
+</body>
+
+</html>

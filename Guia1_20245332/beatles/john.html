@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Beatles</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+
+    <style type="text/tailwindcss">
+        @theme {
+      --font-sans: 'Bai Jamjuree', sans-serif;
+      --color-bg: #F9FAFB;        
+      --color-card: #FFFFFF;
+      --color-text: #1F2937;      
+      --color-muted: #6B7280;    
+      --color-border: #E5E7EB;    
+      --color-accent: #111827;    
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-[--color-bg] text-[--color-text]">
+
+    <!-- NAV -->
+    <header class="sticky top-0 bg-[--color-bg] backdrop-blur border-b border-[--color-border] z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#hero" class="font-bold tracking-wide">John Lennon</a>
+
+            <div class="hidden md:flex items-center gap-6 text-sm text-[--color-muted]">
+                <a href="#bio" class="hover:text-[--color-text]">Historia</a>
+                <a href="#songs" class="hover:text-[--color-text]">Canciones</a>
+            </div>
+
+            <a href="index.html" class="px-4 py-2 rounded-lg bg-[--color-muted] text-sm hover:opacity-90 transition">
+                Inicio
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- 1) HERO -->
+
+    <section id="hero" class="px-6 pt-14 pb-16">
+        <div class="max-w-6xl mx-auto grid gap-10 items-center md:grid-cols-2">
+            <div class="text-center md:text-left">
+                <h1 class="mt-3 text-4xl md:text-5xl font-bold leading-tight">
+                    John Lennon
+                    <span class="block text-[--color-muted] text-xl md:text-2xl font-semibold mt-2">
+                        Voz, compositor y símbolo cultural
+                    </span>
+                </h1>
+
+                <p class="mt-5 text-lg text-[--color-muted] max-w-xl mx-auto md:mx-0">
+                    Un recorrido breve por su historia y mis canciones favoritas, aprendiendo de uno de los musicos mas influyentes en el mundo. 
+                </p>
+
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#bio"
+                        class="px-6 py-3 rounded-lg border border-[--color-border] bg-white font-semibold hover:opacity-90 transition">
+                        Historia
+                    </a>
+                    <a href="#songs"
+                        class="px-6 py-3 rounded-lg border border-[--color-border] bg-white font-semibold hover:opacity-90 transition">
+                        Canciones
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:flex justify-center md:justify-end">
+                <img src="img/john_hero.jpg" alt="John Lennon"
+                    class="w-full max-w-md rounded-2xl shadow-xl object-cover md:max-w-lg lg:max-w-xl" />
+            </div>
+        </div>
+    </section>
+
+    <!-- 2) ABOUT / HISTORIA -->
+
+    <section id="bio" class="px-6 py-16 bg-white border-y border-[--color-border]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold">Historia breve</h2>
+                <p class="mt-3 text-[--color-muted] max-w-2xl mx-auto md:mx-0">
+                    4 momentos clave para entender su impacto musical y cultural.
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 md:grid-cols-2">
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-xs font-semibold text-[--color-muted]">1940–1957</p>
+                    <h3 class="mt-2 text-xl font-bold">Origen y primeras influencias</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] leading-relaxed">
+                        Liverpool, adolescencia marcada por cambios personales y una obsesión temprana por la música.
+                    </p>
+                </article>
+
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-xs font-semibold text-[--color-muted]">1957–1966</p>
+                    <h3 class="mt-2 text-xl font-bold">The Beatles y explosión global</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] leading-relaxed">
+                        Coautor de un catálogo que redefinió el pop; evolución rápida del escenario al estudio.
+                    </p>
+                </article>
+
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-xs font-semibold text-[--color-muted]">1967–1970</p>
+                    <h3 class="mt-2 text-xl font-bold">Experimentación y quiebre</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] leading-relaxed">
+                        Etapa más arriesgada creativamente, también con tensiones internas y cambios de rumbo.
+                    </p>
+                </article>
+
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-[--color-card]">
+                    <p class="text-xs font-semibold text-[--color-muted]">1970+</p>
+                    <h3 class="mt-2 text-xl font-bold">Carrera solista y legado</h3>
+                    <p class="mt-2 text-sm text-[--color-muted] leading-relaxed">
+                        Canciones con mensaje, identidad propia y un impacto cultural que sigue vivo hoy.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3) MUSIC  -->
+
+    <section id="songs" class="px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold">Mis canciones favoritas</h2>
+            </div>
+
+            <div class="mt-10 grid gap-6 lg:grid-cols-2">
+
+
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-white">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold">In My Life</h3>
+                            <p class="mt-1 text-sm text-[--color-muted]">Rubber Soul</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/3KfbEIOC7YIv90FIfNSZpo?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </article>
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-white">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Come Together</h3>
+                            <p class="mt-1 text-sm text-[--color-muted]">Abbey Road</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/2EqlS6tkEnglzr7tkKAAYD?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </article>
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-white">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold">All You Need Is Love</h3>
+                            <p class="mt-1 text-sm text-[--color-muted]">Magical Mistery Tour</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/68BTFws92cRztMS1oQ7Ewj?utm_source=generator&theme=0"
+                            class=" w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </article>
+                <article class="p-4 sm:p-6 rounded-2xl border border-[--color-border] bg-white">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Imagine</h3>
+                            <p class="mt-1 text-sm text-[--color-muted]">John Lennon, Imagine</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 rounded-xl border border-[--color-border] bg-[--color-card] overflow-hidden">
+                        <iframe data-testid="embed-iframe"
+                            src="https://open.spotify.com/embed/track/7pKfPomDEeI4TPT6EOYjn9?utm_source=generator&theme=0"
+                            class="w-full block h-[152px] sm:h-[180px] md:h-[352px]" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="px-6 py-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Explora a cada Beatle</h2>
+            <p class="mt-3 text-[--color-muted] max-w-2xl mx-auto">
+                Visita cada página individual para ver biografía, canciones recomendadas y legado.
+            </p>
+            <a href="#members"
+                class="inline-block mt-8 px-6 py-3 rounded-lg bg-[--color-accent] text-white font-semibold hover:opacity-90 transition">
+                Ir a integrantes
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="px-6 py-10 border-t border-[--color-border] bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-[--color-muted]">© 2026 — Sobre The Beatles - Desarrollo Web II</p>
+            <div class="flex gap-4 text-sm">
+                <a href="index.html" class="text-[--color-muted] hover:text-[--color-text]">Inicio</a>
+                <a href="index.html#about" class="text-[--color-muted] hover:text-[--color-text]">Historia</a>
+                <a href="index.html#members" class="text-[--color-muted] hover:text-[--color-text]">Integrantes</a>
+                <a href="index.html#music" class="text-[--color-muted] hover:text-[--color-text]">Discografía</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
